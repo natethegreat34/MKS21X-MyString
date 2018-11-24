@@ -19,18 +19,12 @@ public char charAt (int index) {
       }
   }
 
-  // public int length () {
-  //   //For exach number inside the data, it adds one to the number of things inside it(l).
-  //   char l = '';
-  //
-  //   try{
-  //     l = data[i];
-  //   }
-  //   catch {
-  //
-  //   }
-  //
-  // }
+  public int length () {
+    //For exach number inside the data, it adds one to the number of things inside it(l).
+    return data.length;
+    }
+
+
   // public CharSequence subSequence (int start, int end) {
   //   ;
   // }
