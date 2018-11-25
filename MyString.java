@@ -31,7 +31,7 @@ public char charAt (int index) {
         throw new IndexOutOfBoundsException ("ERROR");
   }
   if (start == end){return "";}
-  CharSequence sup;
+  String sup = "";
 //starts from the start index and puts each character from each index until the one before the end where it stops (inclusively).
   for (int i = start; i < end; i ++){
     sup = sup + charAt(i);
