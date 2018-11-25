@@ -38,29 +38,8 @@ public char charAt (int index) {
   }
   return sup;}
 
-  // public String toString () {
-  //   ;
-  // }
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-  //
-
-
-
-
-
-
-
-
-
-
-
-
+  public String toString () {
+    return data;
+  }
 
 }
