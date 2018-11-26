@@ -1,9 +1,9 @@
-public class MyString implements CharSequence{
+public class MyString implements CharSequence, Comparable<CharSequence>{
 private char[] data;
 
 
-public MyString (CharSequence e){
-  data  = new char [e.length()];
+public MyString (CharSequence s){
+  data  = new char [s.length()];
 
 }
 
@@ -41,5 +41,17 @@ public char charAt (int index) {
   public String toString () {
     return data;
   }
-
-}
+  public int compareTo (CharSequence e){
+    if(this.length() < e.length()){
+      return -7;
+    }
+    if(this.length() > e.length()){
+      return 100;
+    }
+    for (int i = 0; i < this.length();i ++){
+      if(this.charAt(i) != e.charAt(i)){
+        return -7;
+      }}
+      return 0;
+    }
+  }
