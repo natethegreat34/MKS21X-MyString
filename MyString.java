@@ -31,8 +31,8 @@ public char charAt (int index) {
 
   public CharSequence subSequence (int start, int end) {
 //Catches an error if the start or end is wrong
-    if ((start < 0 || start > end) || (end < 0 || end > data.length - 1)) {
-        throw new IndexOutOfBoundsException ("ERROR");
+    if ((start < 0 || start > end) || (end < 0 || end > data.length)) {
+        throw new IndexOutOfBoundsException ("Sigh");
       }
     if (start == end){return "";}
     String sup = "";

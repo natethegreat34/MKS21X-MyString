@@ -1,6 +1,5 @@
 public class Test {
 	public static void main(String[] args) {
-		//System.out.println('q' * 1);
 		MyString b,d;
 		String a,c;
 
@@ -61,7 +60,7 @@ public class Test {
 			}
 		// Testing MyString.subSequence()
 				for (int j = 0; j < a.length(); j++) {
-					for (int k = j; k < a.length(); k++) {
+					for (int k = j; k <= a.length(); k++) {
 						try {
 							if (!a.subSequence(j,k).equals(b.subSequence(j,k).toString())) {
 								System.out.println("Error in subSequence():");
