@@ -49,18 +49,31 @@ public char charAt (int index) {
   }
 
   public int compareTo (CharSequence e){
+    if (this.length() == 0 && e.length() == 0) {return 0;}
+    if(this.length() == 0){return -7;}
+    if(e.length() == 0){return 100;}
     if(this.length() < e.length()){
-      return -7;
+      for (int i = 0; i < this.length();i ++){
+        if(this.charAt(i) != e.charAt(i)){
+          if (this.charAt(i) * 1 - e.charAt(i) * 1 > 0){
+            return 100;
+          }
+          else {return -7;}}}
     }
     if(this.length() > e.length()){
-      return 100;
+      for (int i = 0; i < e.length();i ++){
+        if(this.charAt(i) != e.charAt(i)){
+          if (this.charAt(i) * 1 - e.charAt(i) * 1 > 0){
+            return 100;
+          }
+          else {return -7;}}}
     }
     for (int i = 0; i < this.length();i ++){
       if(this.charAt(i) != e.charAt(i)){
         if (this.charAt(i) * 1 - e.charAt(i) * 1 > 0){
-          return -7;
+          return 100;
         }
-        else {return 100;}
+        else {return -7;}
       }}
       return 0;
     }
