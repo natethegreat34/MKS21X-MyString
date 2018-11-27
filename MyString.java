@@ -130,9 +130,11 @@ public char charAt (int index) {
   }
 
   public int compareTo (CharSequence e){
+    //Works like a string compareTo
     if (this.length() == 0 && e.length() == 0) {return 0;}
     if(this.length() == 0){return -1;}
     if(e.length() == 0){return 1;}
+    //if the inputed one is shoter then do this...
     if(this.length() < e.length()){
       for (int i = 0; i < this.length();i ++){
         if(this.charAt(i) != e.charAt(i)){
@@ -141,6 +143,7 @@ public char charAt (int index) {
           }
           else {return -1;}}}
     }
+    //if the inputed one is longer then do this...
     if(this.length() > e.length()){
       for (int i = 0; i < e.length();i ++){
         if(this.charAt(i) != e.charAt(i)){
